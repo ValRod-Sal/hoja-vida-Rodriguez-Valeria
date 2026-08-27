@@ -44,4 +44,4 @@ No se requieren dependencias externas ni compiladores para ejecutar este proyect
 
 1. **Clonar o descargar el repositorio:**
    ```bash
-   git clone [https://github.com/tu-usuario/nombre-del-repositorio.git](https://github.com/tu-usuario/nombre-del-repositorio.git)
+   git clone https://github.com/ValRod-Sal/hoja-vida-Rodriguez-Valeria.git
