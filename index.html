@@ -10,17 +10,25 @@
         content="Valeria Rodriguez, Currículum Vitae, Ingeniería de Sistemas, UCB, Universidad Católica Boliviana, La Paz, Bolivia, HTML5 Nativo, Desarrollo de Software, Programación">
     <meta name="author" content="Valeria Raisa Rodríguez Salgado">
     <title>Currículum Vitae | Valeria Raisa Rodríguez Salgado - Ingeniería de Sistemas</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+
+
 </head>
 
 <body>
 
-    <!-- ENLACE DE SALTO DIRECTO PARA NAVEGACIÓN POR TECLADO / LECTORES DE PANTALLA -->
+
     <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
 
     <!-- CABECERA PRINCIPAL Y NAVEGACIÓN NATIVAS -->
     <header role="banner">
 
-        <div>
+        <div class="perfil-flex">
             <h1>Valeria Raisa Rodríguez Salgado</h1>
             <p><strong>Currículum Vitae | Ingeniería de Sistemas</strong></p>
             
@@ -57,7 +65,7 @@
         </div>
 
         <nav aria-label="Navegación principal del currículum">
-            <ul>
+            <ul class="nav-flex">
                 <li><a href="#perfil">Perfil Profesional</a></li>
                 <li><a href="#educacion">Educación & Formación</a></li>
                 <li><a href="#experiencia">Experiencia & Proyectos</a></li>
@@ -73,7 +81,7 @@
         <hr>
     </header>
 
-    <!-- CONTENIDO PRINCIPAL -->
+
     <main id="main-content" role="main">
 
         <section id="perfil" aria-labelledby="perfil-heading">
@@ -160,16 +168,16 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Ingeniería de Sistemas</td>
-                        <td>Universidad Católica Boliviana "San Pablo"</td>
-                        <td><time datetime="2025">2025</time> – Presente</td>
-                        <td>4º Semestre (En curso)</td>
+                        <td data-label="Carrera / Grado">Ingeniería de Sistemas</td>
+                        <td data-label="Institución">Universidad Católica Boliviana "San Pablo"</td>
+                        <td data-label="Período"><time datetime="2025">2025</time> – Presente</td>
+                        <td data-label="Estado / Grado Obtenido">4º Semestre (En curso)</td>
                     </tr>
                     <tr>
-                        <td>Bachillerato en Humanidades</td>
-                        <td>Colegio Inglés Católico</td>
-                        <td><time datetime="2024">2024</time></td>
-                        <td>Bachiller (Egresada)</td>
+                        <td data-label="Carrera / Grado">Bachillerato en Humanidades</td>
+                        <td data-label="Institución">Colegio Inglés Católico</td>
+                        <td data-label="Período"><time datetime="2024">2024</time></td>
+                        <td data-label="Estado / Grado Obtenido">Bachiller (Egresada)</td>
                     </tr>
                 </tbody>
             </table>
@@ -250,6 +258,7 @@
         <section id="habilidades" aria-labelledby="habilidades-tecnicas-heading">
             <h2 id="habilidades-tecnicas-heading">Habilidades Técnicas</h2>
 
+            <div class="habilidades-grid">
             <article>
                 <h3>Lenguajes & Tecnologías</h3>
                 <ul>
@@ -293,6 +302,7 @@
                     <li>Comunicación asertiva y trabajo colaborativo</li>
                 </ul>
             </article>
+            </div>
         </section>
 
         <hr>
@@ -366,15 +376,15 @@
                 <tbody>
                     <tr>
                         <th scope="row">Español</th>
-                        <td>Nativo</td>
-                        <td>Nativo</td>
-                        <td>Nativo</td>
+                        <td data-label="Lectura">Nativo</td>
+                        <td data-label="Escritura">Nativo</td>
+                        <td data-label="Conversación">Nativo</td>
                     </tr>
                     <tr>
                         <th scope="row">Inglés</th>
-                        <td>Intermedio (B1)</td>
-                        <td>Básico / Intermedio (A2-B1)</td>
-                        <td>Básico (A2)</td>
+                        <td data-label="Lectura">Intermedio (B1)</td>
+                        <td data-label="Escritura">Básico / Intermedio (A2-B1)</td>
+                        <td data-label="Conversación">Básico (A2)</td>
                     </tr>
                 </tbody>
             </table>
