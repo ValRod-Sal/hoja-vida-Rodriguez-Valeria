@@ -13,7 +13,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&amp;display=swap" rel="stylesheet">
 
     <link rel="stylesheet" href="css/style.css">
 
@@ -22,14 +22,18 @@
 
 <body>
 
-
-    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+    <!-- ENLACE DE SALTO DIRECTO PARA NAVEGACIÓN POR TECLADO / LECTORES DE PANTALLA -->
+    <a href="#main_content" class="skip_link">Saltar al contenido principal</a>
 
     <!-- CABECERA PRINCIPAL Y NAVEGACIÓN NATIVAS -->
     <header role="banner">
 
-        <div class="perfil-flex">
-            <h1>Valeria Raisa Rodríguez Salgado</h1>
+        <button type="button" id="theme_toggle" class="theme_toggle" aria-pressed="false">
+            🌙 Modo Claro
+        </button>
+
+        <div class="perfil_flex">
+            <h1>Valeria Raisa Rodriguez Salgado</h1>
             <p><strong>Currículum Vitae | Ingeniería de Sistemas</strong></p>
             
             <figure>
@@ -40,14 +44,18 @@
 
             <p><small>Estudiante de Ingeniería de Sistemas | Universidad Católica Boliviana "San Pablo" | La Paz - Bolivia</small></p>
 
-            <section id="contacto-rapido" aria-labelledby="contacto-rapido-heading">
-                <h2 id="contacto-rapido-heading">Información de Contacto</h2>
+            <section id="contacto_rapido" aria-labelledby="contacto_rapido_heading">
+                <h2 id="contacto_rapido_heading">Información de Contacto</h2>
                 <address>
                     Correo Electrónico: <a href="mailto:valeria.rs.rodriguez@gmail.com">valeria.rs.rodriguez@gmail.com</a><br>
                     Teléfono Directo: <a href="tel:+59167004210">+591 67004210</a><br>
                     Ubicación: La Paz, Bolivia<br>
                     Correo Institucional: <a href="mailto:valeria.rodriguez@ucb.edu.bo">valeria.rodriguez@ucb.edu.bo</a><br>
                 </address>
+                <ul class="enlaces_profesionales">
+                    <li><a href="https://github.com/ValRod-Sal" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+                    <li><a href="https://www.linkedin.com/in/valeria-rodriguez-5059783b3/" target="_blank" rel="noopener noreferrer">LinkedIn</a></li>
+                </ul>
             </section>
 
             <p>
@@ -65,7 +73,7 @@
         </div>
 
         <nav aria-label="Navegación principal del currículum">
-            <ul class="nav-flex">
+            <ul class="nav_flex">
                 <li><a href="#perfil">Perfil Profesional</a></li>
                 <li><a href="#educacion">Educación & Formación</a></li>
                 <li><a href="#experiencia">Experiencia & Proyectos</a></li>
@@ -81,11 +89,11 @@
         <hr>
     </header>
 
+    <!-- CONTENIDO PRINCIPAL -->
+    <main id="main_content" role="main">
 
-    <main id="main-content" role="main">
-
-        <section id="perfil" aria-labelledby="perfil-heading">
-            <h2 id="perfil-heading">Perfil Profesional</h2>
+        <section id="perfil" aria-labelledby="perfil_heading">
+            <h2 id="perfil_heading">Perfil Profesional</h2>
             <p>
                 ¡Hola! Soy una apasionada del desarrollo de software enfocado en la creación de soluciones digitales 
                 eficientes. Me defino como una profesional <em>constante, analítica y en continuo aprendizaje</em>.
@@ -124,8 +132,8 @@
         </section>
         <hr>
 
-        <section id="educacion" aria-labelledby="educacion-heading">
-            <h2 id="educacion-heading">Formación Académica</h2>
+        <section id="educacion" aria-labelledby="educacion_heading">
+            <h2 id="educacion_heading">Formación Académica</h2>
 
             <article>
                 <h3>Ingeniería de Sistemas</h3>
@@ -195,8 +203,8 @@
 
         <hr>
 
-        <section id="experiencia" aria-labelledby="experiencia-heading">
-            <h2 id="experiencia-heading">Experiencia Profesional & Proyectos</h2>
+        <section id="experiencia" aria-labelledby="experiencia_heading">
+            <h2 id="experiencia_heading">Experiencia Profesional & Proyectos</h2>
 
             <article>
                 <h3>Técnica de Computadoras</h3>
@@ -255,10 +263,10 @@
 
         <hr>
 
-        <section id="habilidades" aria-labelledby="habilidades-tecnicas-heading">
-            <h2 id="habilidades-tecnicas-heading">Habilidades Técnicas</h2>
+        <section id="habilidades" aria-labelledby="habilidades_tecnicas_heading">
+            <h2 id="habilidades_tecnicas_heading">Habilidades Técnicas</h2>
 
-            <div class="habilidades-grid">
+            <div class="habilidades_grid">
             <article>
                 <h3>Lenguajes & Tecnologías</h3>
                 <ul>
@@ -306,8 +314,8 @@
         </section>
 
         <hr>
-        <section id="certificaciones" aria-labelledby="certificaciones-heading">
-            <h2 id="certificaciones-heading">Certificaciones, Cursos & Seminarios</h2>
+        <section id="certificaciones" aria-labelledby="certificaciones_heading">
+            <h2 id="certificaciones_heading">Certificaciones, Cursos & Seminarios</h2>
 
             <article>
                 <h3>Seminarios & Eventos</h3>
@@ -360,8 +368,8 @@
 
         <hr>
 
-        <section id="idiomas" aria-labelledby="idiomas-heading">
-            <h2 id="idiomas-heading">Idiomas</h2>
+        <section id="idiomas" aria-labelledby="idiomas_heading">
+            <h2 id="idiomas_heading">Idiomas</h2>
 
             <table border="1" cellpadding="8" cellspacing="0">
                 <caption>Nivel de dominio de idiomas</caption>
@@ -392,8 +400,8 @@
 
 
         <hr>
-        <section id="proyectos" aria-labelledby="proyectos-heading">
-            <h2 id="proyectos-heading">Proyectos Destacados</h2>
+        <section id="proyectos" aria-labelledby="proyectos_heading">
+            <h2 id="proyectos_heading">Proyectos Destacados</h2>
 
             <article>
                 <h3>WayFinder – Sistema de Recomendación de Viajes</h3>
@@ -430,8 +438,8 @@
 
         <hr>
 
-        <section id="multimedia" aria-labelledby="multimedia-heading">
-            <h2 id="multimedia-heading">Portafolio Multimedia</h2>
+        <section id="multimedia" aria-labelledby="multimedia_heading">
+            <h2 id="multimedia_heading">Portafolio Multimedia</h2>
 
             <article>
                 <h3>Captura del Proyecto "WayFinder"</h3>
@@ -476,51 +484,59 @@
 
 
         <hr>
-        <section id="contacto" aria-labelledby="contacto-heading-main">
-            <h2 id="contacto-heading-main">Contacto</h2>
+        <section id="contacto" aria-labelledby="contacto_heading_main">
+            <h2 id="contacto_heading_main">Contacto</h2>
             <p>¿Tienes alguna consulta o propuesta de colaboración? Envíame un mensaje a través del siguiente formulario:</p>
 
-            <form action="#" method="post" aria-labelledby="contacto-heading-main">
+            <form action="#" method="post" aria-labelledby="contacto_heading_main" id="formulario_contacto" novalidate>
                 <p>
                     <label for="nombre">Nombre completo:</label><br>
-                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana Pérez" required autocomplete="name">
+                    <input type="text" id="nombre" name="nombre" placeholder="Ej. Ana Pérez" required autocomplete="name" aria-describedby="nombre_error">
+                    <span class="mensaje_error" id="nombre_error" role="alert"></span>
                 </p>
 
                 <p>
                     <label for="email">Correo electrónico:</label><br>
-                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required autocomplete="email">
+                    <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required autocomplete="email" aria-describedby="email_error">
+                    <span class="mensaje_error" id="email_error" role="alert"></span>
                 </p>
 
                 <p>
                     <label for="telefono">Teléfono de contacto:</label><br>
-                    <input type="tel" id="telefono" name="telefono" placeholder="+591 70000000" pattern="[+0-9\s-]{8,15}" autocomplete="tel">
+                    <input type="tel" id="telefono" name="telefono" placeholder="+591 70000000" pattern="[+0-9\s-]{8,15}" autocomplete="tel" aria-describedby="telefono_error">
+                    <span class="mensaje_error" id="telefono_error" role="alert"></span>
                 </p>
 
                 <p>
                     <label for="motivo">Motivo de contacto:</label><br>
-                    <select id="motivo" name="motivo" required>
+                    <select id="motivo" name="motivo" required aria-describedby="motivo_error">
                         <option value="" disabled selected>Selecciona una opción</option>
                         <option value="oferta-laboral">Propuesta / Oferta laboral</option>
                         <option value="proyecto-freelance">Proyecto o colaboración</option>
                         <option value="consulta-academica">Consulta académica / Workshop</option>
                         <option value="otro">Otro motivo</option>
                     </select>
+                    <span class="mensaje_error" id="motivo_error" role="alert"></span>
                 </p>
 
                 <p>
                     <label for="mensaje">Mensaje:</label><br>
-                    <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="Escribe tu mensaje aquí..." required></textarea>
+                    <textarea id="mensaje" name="mensaje" rows="5" cols="40" placeholder="Escribe tu mensaje aquí..." required aria-describedby="mensaje_error"></textarea>
+                    <span class="mensaje_error" id="mensaje_error" role="alert"></span>
                 </p>
 
                 <p>
-                    <input type="checkbox" id="privacidad" name="privacidad" required>
+                    <input type="checkbox" id="privacidad" name="privacidad" required aria-describedby="privacidad_error">
                     <label for="privacidad">Acepto el tratamiento de mis datos de contacto para responder esta solicitud.</label>
+                    <span class="mensaje_error" id="privacidad_error" role="alert"></span>
                 </p>
 
                 <p>
                     <button type="submit">Enviar mensaje</button>
                     <button type="reset">Limpiar formulario</button>
                 </p>
+
+                <p class="mensaje_estado" id="mensaje_estado" role="status" aria-live="polite"></p>
             </form>
         </section>
 
@@ -533,5 +549,6 @@
         <p><small>Fecha de última actualización del documento: <time datetime="2026-08-20">20 de Agosto de 2026</time></small></p>
     </footer>
 
+    <script src="js/script.js"></script>
 </body>
 </html>

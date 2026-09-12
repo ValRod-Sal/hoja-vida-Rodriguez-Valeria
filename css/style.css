@@ -25,7 +25,7 @@ body {
   padding: 20px;
 }
 
-.skip-link {
+.skip_link {
   position: absolute;
   left: -999px;
   top: auto;
@@ -36,7 +36,7 @@ body {
   z-index: 1000;
 }
 
-.skip-link:focus {
+.skip_link:focus {
   left: 20px;
   top: 20px;
 }
@@ -81,31 +81,100 @@ header, section, article, details, table, form, aside {
   box-shadow: var(--shadow);
 }
 
+/* ---------- MODO CLARO ---------- */
+body.light_mode {
+  --bg-color: #f5f5f0;
+  --card-bg: #ffffff;
+  --text-color: #1c1c1c;
+  --text-muted: #555555;
+  --border-color: #dddddd;
+  --shadow: 0 4px 14px rgba(0, 0, 0, 0.12);
+}
+
+.theme_toggle {
+  display: block;
+  margin: 0 0 16px auto;
+  width: auto;
+  max-width: none;
+  background-color: var(--accent-color);
+  color: #000;
+  font-weight: bold;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 20px;
+  cursor: pointer;
+}
+
+.theme_toggle:hover, .theme_toggle:focus {
+  opacity: 0.85;
+}
+
+/* ---------- ENLACES PROFESIONALES ---------- */
+.enlaces_profesionales {
+  list-style: none;
+  display: flex;
+  gap: 14px;
+  padding: 0;
+  margin: 10px 0 0;
+}
+
+.enlaces_profesionales li a {
+  padding: 6px 14px;
+  border: 1px solid var(--accent-color);
+  border-radius: 20px;
+}
+
+/* ---------- MENSAJES DE VALIDACIÓN ---------- */
+.mensaje_error {
+  display: block;
+  color: #ff6b6b;
+  font-size: 0.85rem;
+  min-height: 1.2em;
+  margin-top: 4px;
+}
+
+body.light_mode .mensaje_error {
+  color: #c0392b;
+}
+
+.mensaje_estado {
+  font-weight: bold;
+  margin-top: 12px;
+}
+
+.mensaje_exito {
+  color: #4caf50;
+}
+
+.mensaje_fallo {
+  color: #ff6b6b;
+}
+
 /* ---------- FLEXBOX: encabezado principal ---------- */
-.perfil-flex {
+.perfil_flex {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 24px;
 }
 
-.perfil-flex figure {
+.perfil_flex figure {
   margin: 0;
   flex: 0 0 auto;
 }
 
-.perfil-flex figure img {
+.perfil_flex figure img {
   border-radius: 50%;
   border: 3px solid var(--accent-color);
   object-fit: cover;
   box-shadow: var(--shadow);
 }
 
-.perfil-flex > *:not(figure) {
+.perfil_flex > *:not(figure) {
   flex: 1 1 320px;
 }
 
-nav ul.nav-flex {
+nav ul.nav_flex {
   list-style: none;
   display: flex;
   flex-wrap: wrap;
@@ -114,7 +183,7 @@ nav ul.nav-flex {
   margin: 0;
 }
 
-nav ul.nav-flex li a {
+nav ul.nav_flex li a {
   display: inline-block;
   padding: 6px 12px;
   border: 1px solid var(--border-color);
@@ -123,8 +192,8 @@ nav ul.nav-flex li a {
   font-size: 0.95rem;
 }
 
-nav ul.nav-flex li a:hover,
-nav ul.nav-flex li a:focus {
+nav ul.nav_flex li a:hover,
+nav ul.nav_flex li a:focus {
   background-color: var(--accent-color);
   color: #000;
   text-decoration: none;
@@ -160,13 +229,13 @@ details summary {
 }
 
 /* ---------- CSS GRID: habilidades técnicas ---------- */
-.habilidades-grid {
+.habilidades_grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
 
-.habilidades-grid article {
+.habilidades_grid article {
   margin-bottom: 0;
   box-shadow: none;
 }
@@ -275,21 +344,21 @@ footer[role="contentinfo"] {
     padding: 12px;
   }
 
-  .perfil-flex {
+  .perfil_flex {
     flex-direction: column;
     text-align: center;
   }
 
-  .perfil-flex figure img {
+  .perfil_flex figure img {
     width: 120px;
     height: 150px;
   }
 
-  .habilidades-grid {
+  .habilidades_grid {
     grid-template-columns: 1fr;
   }
 
-  nav ul.nav-flex {
+  nav ul.nav_flex {
     flex-direction: column;
     gap: 8px;
   }
